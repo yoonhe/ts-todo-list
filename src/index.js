@@ -1,51 +1,36 @@
 /**
- * Represents a book.
- * @constructor
- * @param {string} title - The title of the book.
- * @param {string} author - The author of the book.
+ * @typedef Todo
+ * @type {object}
+ * @property {string} id - Todo id.
+ * @property {string} todo - Todo 내용.
+ * @property {boolean} check - Todo 완료 여부.
  */
-function Book(title, author) {}
+
+/** 
+ * @type {Todo[]} 
+ * @default []
+* */
+let todos;
+
 
 /**
- * Both of these will link to the bar function.
- * @see {@link bar}
- * @see bar
+ * @param {string} todo - 생성하는 Todo 내용
  */
-function foo() {}
-
-// Use the inline {@link} tag to include a link within a free-form description.
-/**
- * @see {@link foo} for further information.
- * @see {@link http://github.com|GitHub}
- */
-function bar() {}
+function createTodo(todo) {
+    
+}
 
 /**
- * Generic dairy product.
- * @constructor
+ * @param {string} id - 업데이트할 Todo id
+ * @param {string} todo - 업데이트할 Todo 내용
  */
-function DairyProduct() {}
+function updateTodo({id, todo}) {
+    
+}
 
 /**
- * Check whether the dairy product is solid at room temperature.
- * @abstract
- * @return {boolean}
+ * @param {string} id - 완료할 Todo id
  */
-DairyProduct.prototype.isSolid = function () {
-	throw new Error('must be implemented by subclass!');
-};
-
-/**
- * Cool, refreshing milk.
- * @constructor
- * @augments DairyProduct
- */
-function Milk() {}
-
-/**
- * Check whether milk is solid at room temperature.
- * @return {boolean} Always returns false.
- */
-Milk.prototype.isSolid = function () {
-	return false;
-};
+function completTodo(id) {
+    
+}
